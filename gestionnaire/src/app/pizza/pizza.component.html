@@ -1,3 +1,9 @@
-<p>
-  pizza works!
-</p>
+<section *ngFor="let p of pizzas" class="col-3">
+  <h1>{{p.nom}}</h1>
+  <p>
+    {{p.description}}
+  </p>
+  <img src="{{p.image}}"><img>
+  {{p.prix}}€
+  <button class="button" >Ajouter</button>
+</section>
