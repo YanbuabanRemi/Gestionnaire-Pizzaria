@@ -9,6 +9,14 @@ import { ListePizzaComponent } from './liste-pizza/liste-pizza.component';
 import { CommandeComponent } from './commande/commande.component';
 import { ListeCommandeComponent } from './liste-commande/liste-commande.component';
 import { EnregistrementComponent } from './enregistrement/enregistrement.component';
+import { Routes, RouterModule } from '@angular/router';
+import { MenuComponent } from './menu/menu.component'
+
+const routes: Routes = [
+  {path : "accueil", component : MenuComponent},
+  {path : "enregistrementClient", component : EnregistrementComponent},
+  {path : "totalCommandes", component : ListeCommandeComponent}
+]
 
 @NgModule({
   declarations: [
@@ -18,11 +26,13 @@ import { EnregistrementComponent } from './enregistrement/enregistrement.compone
     ListePizzaComponent,
     CommandeComponent,
     ListeCommandeComponent,
-    EnregistrementComponent
+    EnregistrementComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]
