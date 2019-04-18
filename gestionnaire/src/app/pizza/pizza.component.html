@@ -1,13 +1,13 @@
 
   <div class="card" style="width:15rem;">
-    <img src="{{image}}" class="card-img-top"/>
+    <img src="{{image}}" class="card-img-top" />
     <div class="card-body">
       <h5 class="card-title">{{nom}}</h5>
       <p class="card-text">
         {{description}}
       </p>
-      <p class="posBas">{{prix}}€</p>
+      <a class="posBas" >{{prix}}€</a>
     </div>
-    <button class="button" click="addToCart()">Ajouter</button>
+    <button class="button" (click)="addToCart()">Ajouter</button>
   </div>
 

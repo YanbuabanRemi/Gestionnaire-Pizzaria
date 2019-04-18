@@ -10,10 +10,12 @@ import { CommandeComponent } from './commande/commande.component';
 import { ListeCommandeComponent } from './liste-commande/liste-commande.component';
 import { EnregistrementComponent } from './enregistrement/enregistrement.component';
 import { Routes, RouterModule } from '@angular/router';
-import { MenuComponent } from './menu/menu.component'
+import { MenuComponent } from './menu/menu.component';
+import { DataService } from './data.service';
+
 
 const routes: Routes = [
-  {path : "accueil", component : MenuComponent},
+  {path : "", component : EnregistrementComponent},
   {path : "enregistrementClient", component : EnregistrementComponent},
   {path : "totalCommandes", component : ListeCommandeComponent}
 ]
@@ -34,7 +36,7 @@ const routes: Routes = [
     AppRoutingModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

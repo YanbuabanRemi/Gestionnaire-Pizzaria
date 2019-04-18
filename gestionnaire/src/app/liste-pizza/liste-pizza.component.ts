@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-liste-pizza',
@@ -45,7 +46,9 @@ export class ListePizzaComponent implements OnInit {
       prix: "8"
     }
   ]
-  constructor() { }
+  constructor(private data : DataService) {
+    
+  }
 
   ngOnInit() {
   }

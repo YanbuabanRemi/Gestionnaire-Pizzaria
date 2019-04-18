@@ -1,4 +1,8 @@
-<section>
-  <h1>Total Commandes</h1>
-  
-</section>
+  <section>
+    liste des produits choisi par le client
+    total = €
+    <div *ngFor="let p of listePizza">
+      <app-commande [nom]='p.nom' [prix]='p.prix'></app-commande>
+    </div>
+    <button class="button">Valider commande</button>
+  </section>

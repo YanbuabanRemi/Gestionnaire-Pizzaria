@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { DataService } from '../data.service';
+
 
 @Component({
   selector: 'app-liste-commande',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListeCommandeComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
+  listePizza = [];
+  prixCommande;
+  constructor(private data: DataService) { 
+    this.listePizza = this.data.listePizza;
   }
 
+  ngOnInit() {
+    // for(let p of this.listePizza){
+    //   let price = parseInt(p.prix);
+    //   this.prixCommande = price + this.prixCommande;
+    //   console.log(this.prixCommande)
+    // }
+    
+  }
+
+  
 }
