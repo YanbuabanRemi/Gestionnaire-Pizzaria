@@ -5,12 +5,7 @@ import { Subject } from 'rxjs';
 @Injectable()
 export class DataService {
 
-  clients = [
-    {
-      nom : "",
-      prix : "",
-    }
-  ];
+  clients = [];
   listePizza = JSON.parse(localStorage.getItem('listeCommande'));
   // listePizzaSubject = new Subject<any>();
 
@@ -18,13 +13,18 @@ export class DataService {
   //   this.listePizzaSubject.next(this.listePizza);
   // }
 
-  ajoutClient = (nom, prix) =>{
-    this.clients.push(nom, prix);
-    localStorage.setItem("ListeClient", JSON.stringify(this.clients)); 
+  ajoutClient = (prenom, prixtotal) =>{
+    this.clients = this.getClient()
+    this.clients.push({nom : prenom, prix: prixtotal});
+    localStorage.setItem("listeClient", JSON.stringify(this.clients)); 
   }
 
   getCommande = () => {
      return (localStorage.getItem('listeCommande') != null)  ? JSON.parse(localStorage.getItem('listeCommande')) : [];
+  }
+
+  getClient = () => {
+    return (localStorage.getItem('listeClient') != null)  ? JSON.parse(localStorage.getItem('listeClient')) : [];
   }
 
   constructor() { }

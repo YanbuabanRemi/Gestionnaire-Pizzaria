@@ -1,8 +1,12 @@
   <section>
-    liste des produits choisi par le client
-    total = €
+      <div>
+          <h3>Nouveau Client</h3>
+          <input type="text" class="form-control" (change)="change($event)" required placeholder="Nom du client...">
+        </div>
+    <button class="button" class="form-control" (click)="addClientOnClick()">Valider commande</button>
+    <h2>Total : {{prixCommande}} €</h2>
     <div *ngFor="let p of listePizza">
       <app-commande [nom]='p.nom' [prix]='p.prix'></app-commande>
     </div>
-    <button class="button">Valider commande</button>
+    
   </section>

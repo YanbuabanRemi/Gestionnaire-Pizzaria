@@ -12,12 +12,14 @@ import { EnregistrementComponent } from './enregistrement/enregistrement.compone
 import { Routes, RouterModule } from '@angular/router';
 import { MenuComponent } from './menu/menu.component';
 import { DataService } from './data.service';
+import { TotalCommandeComponent } from './total-commande/total-commande.component';
+import { TotalCommandeListeComponent } from './total-commande-liste/total-commande-liste.component';
 
 
 const routes: Routes = [
   {path : "", component : EnregistrementComponent},
   {path : "enregistrementClient", component : EnregistrementComponent},
-  {path : "totalCommandes", component : ListeCommandeComponent}
+  {path : "totalCommandes", component : TotalCommandeListeComponent}
 ]
 
 @NgModule({
@@ -29,7 +31,9 @@ const routes: Routes = [
     CommandeComponent,
     ListeCommandeComponent,
     EnregistrementComponent,
-    MenuComponent
+    MenuComponent,
+    TotalCommandeComponent,
+    TotalCommandeListeComponent
   ],
   imports: [
     BrowserModule,

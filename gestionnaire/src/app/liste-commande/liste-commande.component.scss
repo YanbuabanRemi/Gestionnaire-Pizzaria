@@ -1,3 +1,16 @@
 section{
-    color : #f1f1f1;
+    color : #aba9a9;
+    margin-top: 2rem
+}
+button{
+    margin-top:1rem
+}
+button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+button:active{
+  transform: translateY(3px);
+}
+h2{
+    margin-top: 2rem;
 }

@@ -27,7 +27,6 @@ export class PizzaComponent implements OnInit {
     this.listeCommande = this.data.getCommande();
     this.listeCommande.push({ nom: this.nom, prix: this.prix });
     localStorage.setItem('listeCommande', JSON.stringify(this.listeCommande));
-    // this.data.emit();
     location.reload();
   }
 }
