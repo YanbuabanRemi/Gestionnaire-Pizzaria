@@ -11,14 +11,38 @@ export class PizzaComponent implements OnInit {
   pizzas = [
     {
       nom: "Margherita",
-      description: "Sauce tomate & mozzarella",
-      image: "https://www.abeautifulplate.com/wp-content/uploads/2015/08/the-best-homemade-margherita-pizza-1-4.jpg",
+      description: "Concassé de tomates, mozzarella, feuilles de basilic",
+      image: "https://medias.delarte.fr/media/sys_master/h8b/h6e/8808367357982.jpg",
       prix: "7"
     },
     {
-      nom: "Orientale",
-      description: "Sauce tomate, mozzarella, oignons, merguez, poivrons mélangés.",
-      image: "https://cac.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Fcac.2F2018.2F09.2F25.2F5ad52111-03c7-44c1-89d4-34d5cc3bcf6a.2Ejpeg/750x562/quality/80/crop-from/center/pizza-orientale.jpeg",
+      nom: "Chèvre et miel",
+      description: "Crème et miel, mozzarella, fromage de chèvre, speck* IGP (jambon fumé), roquette",
+      image: "https://medias.delarte.fr/media/sys_master/hf7/h51/8808367489054.jpg",
+      prix: "8"
+    },
+    {
+      nom: "Pomodoro e burrata",
+      description: "Concassé de tomates, tomates cerise marinées, fromage italien râpé, roquette, burrata, jambon cuit aux herbes*",
+      image: "https://medias.delarte.fr/media/sys_master/h69/h2c/8808367554590.jpg",
+      prix: "8"
+    },
+    {
+      nom: "Carbonara",
+      description: "Sauce tomate, mozzarella, jambon**, œuf, crème, ciboulette",
+      image: "https://medias.delarte.fr/media/sys_master/h02/h8b/8808368013342.jpg",
+      prix: "8"
+    },
+    {
+      nom: "Végétarienne",
+      description: "Concassé de tomates, mélange de légumes cuisinés, mozzarella, carpaccio de courgette, tomates cerise marinées, olives noires",
+      image: "https://medias.delarte.fr/media/sys_master/hc1/h50/8808368275486.jpg",
+      prix: "8"
+    },
+    {
+      nom: "Calzone pollo e scamorza",
+      description: "Crème mascarpone, sauce tomate, mozzarella, émincés de poulet**, scamorza fumée.",
+      image: "https://medias.delarte.fr/media/sys_master/h6c/h3b/8808368341022.jpg",
       prix: "8"
     }
   ]

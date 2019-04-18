@@ -1,9 +1,11 @@
 <section>
   <div>
-    Nouveau Client
-    <input type="text" >
+    <h3>Nouveau Client</h3>
+    <input type="text">
   </div>
-  <app-pizza></app-pizza>
-  <app-commande></app-commande>
-  <button class="button" >Valider commande</button>
+  <div class="row">
+  <div class="col-9"><app-pizza class="row"></app-pizza></div>
+  <div class="col-3"><app-commande></app-commande><button class="button">Valider commande</button></div>
+  </div>
+  
 </section>
