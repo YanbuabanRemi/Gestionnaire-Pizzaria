@@ -1,13 +1,13 @@
-<section *ngFor="let p of pizzas">
+
   <div class="card" style="width:15rem;">
-    <img src="{{p.image}}" class="card-img-top" onclick="ajouterCommande()"/>
+    <img src="{{image}}" class="card-img-top"/>
     <div class="card-body">
-      <h5 class="card-title">{{p.nom}}</h5>
+      <h5 class="card-title">{{nom}}</h5>
       <p class="card-text">
-        {{p.description}}
+        {{description}}
       </p>
-      <p class="posBas">{{p.prix}}€</p>
+      <p class="posBas">{{prix}}€</p>
     </div>
-    <!-- <button class="button">Ajouter</button> -->
+    <button class="button" click="addToCart()">Ajouter</button>
   </div>
-</section>
+

@@ -8,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EnregistrementComponent implements OnInit {
 
+  nomClient
   constructor() { }
 
   ngOnInit() {
   }
 
+  change = (event) => {
+    this.nomClient = event.target.value
+  }
 }
