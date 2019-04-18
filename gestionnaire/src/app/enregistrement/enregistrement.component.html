@@ -1,10 +1,10 @@
 <section>
   <div>
     <h3>Nouveau Client</h3>
-    <input type="text">
+    <input type="text" placehorlder="Nom du client..." (keyup)="change($event)">
   </div>
   <div class="row">
-  <div class="col-9"><app-pizza class="row"></app-pizza></div>
+  <div class="col-9"><app-liste-pizza class="row"></app-liste-pizza></div>
   <div class="col-3"><app-commande></app-commande><button class="button">Valider commande</button></div>
   </div>
   

@@ -1,3 +1,6 @@
-<p>
-  liste-pizza works!
-</p>
+<div *ngFor="let p of pizzas">
+  <app-pizza [nom]='p.nom' [image]='p.image' [description]='p.description' [prix]='p.prix'></app-pizza>
+</div>
+
+
+  
