@@ -23,7 +23,7 @@ export class ListePizzaComponent implements OnInit {
     },
     {
       nom: "Pomodoro e burrata",
-      description: "Concassé de tomates, tomates cerise marinées, fromage italien râpé, roquette, burrata, jambon cuit aux herbes*",
+      description: "Concassé de tomates, tomates cerise marinées, fromage italien râpé, roquette, burrata",
       image: "https://medias.delarte.fr/media/sys_master/h69/h2c/8808367554590.jpg",
       prix: 11
     },
@@ -35,12 +35,12 @@ export class ListePizzaComponent implements OnInit {
     },
     {
       nom: "Végétarienne",
-      description: "Concassé de tomates, mélange de légumes cuisinés, mozzarella, carpaccio de courgette, tomates cerise marinées, olives noires",
+      description: "Concassé de tomates, mozzarella, carpaccio de courgette, tomates cerise marinées, olives noires",
       image: "https://medias.delarte.fr/media/sys_master/hc1/h50/8808368275486.jpg",
       prix: 7
     },
     {
-      nom: "Calzone pollo e scamorza",
+      nom: "Calzone pollo ",
       description: "Crème mascarpone, sauce tomate, mozzarella, émincés de poulet**, scamorza fumée.",
       image: "https://medias.delarte.fr/media/sys_master/h6c/h3b/8808368341022.jpg",
       prix: 10

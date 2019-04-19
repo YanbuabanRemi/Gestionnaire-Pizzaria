@@ -1,12 +1,14 @@
   <section>
-      <div>
-          <h3>Nouveau Client</h3>
-          <input type="text" class="form-control" (change)="change($event)" required placeholder="Nom du client...">
-        </div>
+    <div>
+      <h3>Nouveau Client</h3>
+      <p class="line"></p>
+      <input type="text" class="form-control" (change)="change($event)" required placeholder="Nom du client...">
+    </div>
     <button class="button form-control" (click)="addClientOnClick()">Valider commande</button>
+    <p class="line"></p>
     <h2>Total : {{prixCommande}} €</h2>
     <div *ngFor="let p of listePizza">
       <app-commande [nom]='p.nom' [prix]='p.prix'></app-commande>
     </div>
-    
+
   </section>

@@ -1,6 +1,9 @@
 <div class="row">
-  <p class="col-3">Client : {{nom}}</p>
+  <h4 class="col-3"> {{nom}}</h4>
   <p class="col-3">{{prix}} €</p>
-  <button class="button form-control col-3" > Paiement</button>
-  
+
+    <button class="button form-control col-3" (click)="myFunction()" [disabled]="!vrai"> Paiement</button>
+    <h5 *ngIf="hideMe" class="col-3 vert">
+      Paiement validé !
+    </h5>
 </div>

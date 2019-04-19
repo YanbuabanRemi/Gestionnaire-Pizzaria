@@ -1,5 +1,7 @@
 div{
-    text-align: center
+    text-align: center;
+    border: solid 0.05rem;
+    color: #c6a009a3;
 }
 .card{
     margin:0.5rem;
@@ -12,6 +14,7 @@ img{
 .card-body{
     height: 16rem;
     position: relative;
+    color: black
 }
 .posBas{
     font-weight: bold;
@@ -29,10 +32,16 @@ button {
    box-shadow: 6px 6px 0px black;
 }
 
-.card-img-top{
-a{
+h4 {
    position: absolute;
+   text-align: center;
    bottom: 0.5rem;
-   color:rgb(184, 47, 13);
-    
+   left: 6.5rem;
+}
+.line{
+    border: solid 0.1rem;
+    color: #997f18;
+    position: absolute;
+    bottom: 3rem;
+    width: 80%;
 }
