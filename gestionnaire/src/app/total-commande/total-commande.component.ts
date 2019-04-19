@@ -10,13 +10,14 @@ export class TotalCommandeComponent implements OnInit {
 
   @Input() nom;
   @Input() prix;
-  vrai = true;
-  hideMe = false;
+  vrai;
+  hideMe;
 
   constructor() { }
 
   ngOnInit() {
-
+  this.vrai = true;
+  this.hideMe = false;
   }
   myFunction() {
     this.vrai = false;

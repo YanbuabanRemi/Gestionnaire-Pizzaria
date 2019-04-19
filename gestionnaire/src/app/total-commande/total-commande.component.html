@@ -1,9 +1,9 @@
 <div class="row">
   <h4 class="col-3"> {{nom}}</h4>
   <p class="col-3">{{prix}} €</p>
-
-    <button class="button form-control col-3" (click)="myFunction()" [disabled]="!vrai"> Paiement</button>
-    <h5 *ngIf="hideMe" class="col-3 vert">
+<p>
+    <button class="button form-control col-3" (click)="myFunction()" [disabled]="!vrai"> <i class="fas fa-shopping-basket"></i></button>
+</p><h5 *ngIf="hideMe" class="col-3 vert">
       Paiement validé !
     </h5>
 </div>
