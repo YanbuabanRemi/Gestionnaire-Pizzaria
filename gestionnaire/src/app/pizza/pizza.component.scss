@@ -3,6 +3,7 @@ div{
 }
 .card{
     margin:0.5rem;
+    background-color: #a5b2a5;
     
 }
 img{
@@ -10,7 +11,25 @@ img{
 }
 .card-body{
     height: 16rem;
+    position: relative;
 }
+.posBas{
+    font-weight: bold;
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color:rgb(163, 40, 9)
+}
+
+button {
+   background-color: #a46c6c;
+   border-style: groove;
+   box-shadow: 6px 6px 0px black;
+}
+
+.card-img-top{
 a{
    position: absolute;
    bottom: 0.5rem;
