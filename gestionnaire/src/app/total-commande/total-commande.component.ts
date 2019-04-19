@@ -10,10 +10,13 @@ export class TotalCommandeComponent implements OnInit {
 
   @Input() nom;
   @Input() prix;
+  
+
   constructor() { }
 
   ngOnInit() {
-    console.log(this.nom)
+
   }
 
+  
 }

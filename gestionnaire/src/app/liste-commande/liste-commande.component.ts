@@ -38,6 +38,7 @@ export class ListeCommandeComponent implements OnInit {
     this.data.ajoutClient(this.nomClient, this.prixCommande)
     localStorage.removeItem('listeCommande')
     this.route.navigate(['totalCommandes'])
+  //   location.reload();
   }
 
 }

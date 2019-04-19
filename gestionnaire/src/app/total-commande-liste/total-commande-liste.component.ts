@@ -7,11 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TotalCommandeListeComponent implements OnInit {
 
-  listeCommandes = [ JSON.parse(localStorage.getItem('listeClient'))];
+  listeCommandes =  JSON.parse(localStorage.getItem('listeClient'));
   constructor() { }
 
   ngOnInit() {
-    
+  
   }
 
 }
