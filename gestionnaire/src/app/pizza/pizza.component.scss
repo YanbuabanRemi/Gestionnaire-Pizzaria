@@ -6,6 +6,9 @@ div{
     background-color: #a5b2a5;
     
 }
+img{
+    cursor:pointer;
+}
 .card-body{
     height: 16rem;
     position: relative;
@@ -27,5 +30,9 @@ button {
 }
 
 .card-img-top{
+a{
+   position: absolute;
+   bottom: 0.5rem;
+   color:rgb(184, 47, 13);
     
 }

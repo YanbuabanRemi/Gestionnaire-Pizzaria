@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { DataService } from '../data.service';
-import { ListeCommandeComponent } from '../liste-commande/liste-commande.component';
+
 
 @Component({
   selector: 'app-pizza',
@@ -14,20 +14,19 @@ export class PizzaComponent implements OnInit {
   @Input() description;
   @Input() image;
 
-  ListeCommande = [{
-    nom : "",
-    prix: "",
-  }];
-  
+  listeCommande = [];
 
-  addTOCart = () => {
-    this.ListeCommande.push = ({nom: this.nom, prix: this.prix})
-  }
-  constructor() { 
+  constructor(private data: DataService) {
     
   }
 
   ngOnInit() {
   }
 
+  addToCart = () => {
+    this.listeCommande = this.data.getCommande();
+    this.listeCommande.push({ nom: this.nom, prix: this.prix });
+    localStorage.setItem('listeCommande', JSON.stringify(this.listeCommande));
+    location.reload();
+  }
 }
